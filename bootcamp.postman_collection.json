@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "a966c58d-eecd-4781-930f-1c9a1c29dd66",
+		"name": "bootcamp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \r\n        \"commission\": 0.0,\r\n        \"numberOfMovements\": 0,\r\n        \"numberOfCredit\": 0,\r\n        \"amount\": 10.0,\r\n        \"limitCredit\": 0,\r\n        \"action\": \"deposito\",\r\n        \"idTypeProduct\": \"62616f58c5524c223a20212e\",\r\n        \"idCustomer\": \"627d6c38c3f254144c67ef2d\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8882/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8882",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllIdCustomer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8882/products/findByIdCustomers/62617e4560c2270554aafb26",
+							"host": [
+								"localhost"
+							],
+							"port": "8882",
+							"path": [
+								"products",
+								"findByIdCustomers",
+								"62617e4560c2270554aafb26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8882/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8882",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "type-producto",
+			"item": [
+				{
+					"name": "type-product-all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8882/type-products",
+							"host": [
+								"localhost"
+							],
+							"port": "8882",
+							"path": [
+								"type-products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bank",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8882/products/banks/627d38cb444a331fca06f5b1",
+							"host": [
+								"localhost"
+							],
+							"port": "8882",
+							"path": [
+								"products",
+								"banks",
+								"627d38cb444a331fca06f5b1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "type",
+					"item": [
+						{
+							"name": "gelAll-typeCustomer",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8882/customers/",
+									"host": [
+										"localhost"
+									],
+									"port": "8882",
+									"path": [
+										"customers",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getAllCustomer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8882/customers",
+							"host": [
+								"localhost"
+							],
+							"port": "8882",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "servicios",
+			"item": [
+				{
+					"name": "getALL-general",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8882/servicios/customer/627d6c38c3f254144c67ef2d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8882",
+							"path": [
+								"servicios",
+								"customer",
+								"627d6c38c3f254144c67ef2d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar-saldo-cuenta",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8882/servicios/saldo/627d6e714943eb2aa9416552",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8882",
+							"path": [
+								"servicios",
+								"saldo",
+								"627d6e714943eb2aa9416552"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "operaciones",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"id\": \"627d6e714943eb2aa9416552\",\r\n    \"amount\":20,\r\n    \"action\": \"pago\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8882/servicios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8882",
+							"path": [
+								"servicios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getHistoricoReporte",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8882/historicos/reporte",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8882",
+							"path": [
+								"historicos",
+								"reporte"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "opereacionBootCoin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nurDocCustomer\":\"55555555\",\r\n    \"idBank\":\"627d38cb444a331fca06f5b1\",\r\n    \"value\":10,\r\n    \"action\":\"compra\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8882/servicios/bank",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8882",
+							"path": [
+								"servicios",
+								"bank"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
